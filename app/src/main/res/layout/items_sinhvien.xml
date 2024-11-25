@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <!-- Họ và Tên -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/textViewHoTenLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Họ và Tên:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewHoVaTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyen Vo Thanh Phuc"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- MSSV -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/textViewMSSVLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MSSV:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewMSSV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22150208"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    >
+
+    <!-- ImageView trên cùng -->
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user_svgrepo_com"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Họ và Tên -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/textViewHoTenLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Họ và Tên:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewHoVaTenDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyen Vo Thanh Phuc"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- MSSV -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/textViewMSSVLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MSSV:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewMSSVDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22150208"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Tên Lớp -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/textViewTenLopLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tên Lớp:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewTenLopDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="221405"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/textViewGioiTinhLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Giới tính:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewGioiTinhDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nam"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/textViewNamSinhLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Giới tính:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewNamSinhDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nam"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <!-- Số Điện Thoại -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/textViewSDTLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Số Điện Thoại:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewSDTDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0353181426"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Gmail -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewGmailLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Gmail:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewGmailDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nguyenphuc2004aye@gmail.com"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

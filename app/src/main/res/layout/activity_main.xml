@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".DangNhap.MainActivityLogin">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal|top"
+        android:drawableStart="@drawable/user_svgrepo_com"/>
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="8dp"
+        android:background="#F6F1F1"
+        android:drawableStart="@drawable/user_edittext"
+        android:drawablePadding="4dp"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="18dp"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/editTextPassWord"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextUserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:background="#F6F1F1"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:maxLength="8"
+        android:padding="18dp"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/keyword_svgrepo_com" />
+    <ImageView
+        android:id="@+id/eyePassWord"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignEnd="@id/editTextPassWord"
+        android:layout_marginTop="329dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/eyepass" />
+    <CheckBox
+        android:id="@+id/checkBoxRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/editTextPassWord"/>
+
+    <Button
+        android:id="@+id/btnRegisterNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPassWord"
+        android:layout_marginLeft="110dp"
+        android:background="@android:color/transparent"
+        android:layout_toRightOf="@+id/checkBoxRememberMe"
+        android:text="Register now?"
+        android:textColor="#045AEF" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextPassWord"
+        android:layout_marginTop="60dp"
+        android:padding="18dp"
+        android:backgroundTint="#333"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"/>
+</RelativeLayout>

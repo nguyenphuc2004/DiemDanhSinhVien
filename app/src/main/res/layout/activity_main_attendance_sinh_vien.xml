@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiemDanhSinhVien.MainAttendanceSinhVien"
+    android:background="@drawable/background_program"
+    android:orientation="vertical"
+    android:padding="16dp"> <!-- Thêm padding cho toàn bộ layout -->
+
+    <!-- Tiêu đề -->
+
+    <!-- Danh sách hiển thị thông tin điểm danh -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:text="Điểm Danh Sinh Viên"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Khi bạn điểm danh thông tin sẽ lưu lại và không thể sửa đổi."
+        android:textSize="30sp" />
+    <!-- Nút thêm điểm danh -->
+    <Button
+        android:id="@+id/btnAddAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Điểm Danh"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#D5CDB7"/>
+
+</LinearLayout>

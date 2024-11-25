@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Có phép"
+        android:id="@+id/item_CoPhep"/>
+    <item
+        android:title="Không phép"
+        android:id="@+id/item_KhongPhep"/>
+    <item
+        android:title="Có Mặt"
+        android:id="@+id/item_CoMat"/>
+</menu>

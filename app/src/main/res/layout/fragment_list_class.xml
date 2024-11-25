@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DanhSachLop.Fragment_listClass"
+    android:background="@drawable/background_program"
+    android:padding="16dp"
+    android:layout_marginTop="3dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Danh sách lớp học"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/background_text"
+        />
+
+    <ListView
+        android:id="@+id/listViewClass"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:layout_marginTop="60dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        />
+</FrameLayout>

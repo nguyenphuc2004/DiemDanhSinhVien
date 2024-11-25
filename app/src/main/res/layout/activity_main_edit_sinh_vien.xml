@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DanhSachTatCaSinhVien.MainActivity_editSinhVien"
+    android:background="@drawable/background_program">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/background_text"
+            android:gravity="center"
+            android:text="Quản Lý Sinh Viên"
+            android:textColor="@color/white"
+            android:layout_marginTop="3dp"
+            android:textSize="30dp" />
+        <!-- Họ và Tên -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Họ và Tên"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextHoTen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập họ và tên"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <!-- MSSV -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="MSSV"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextMssv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:inputType="number"
+                android:maxLength="8"
+                android:hint="Nhập MSSV Khi Sửa"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!-- Lớp học -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Lớp học"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextLopHoc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textSize="20sp"
+                android:hint="Nhập lớp học" />
+        </LinearLayout>
+
+        <!-- Giới tính -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Giới tính"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp" />
+
+            <!-- Sử dụng RadioGroup để chứa các RadioButton -->
+            <RadioGroup
+                android:id="@+id/radioGroupGioiTinh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonNam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="16dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Năm sinh"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextNamSinh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:maxLength="4"
+                android:textSize="20sp"
+                android:inputType="number"
+                android:hint="Nhập năm sinh" />
+        </LinearLayout>
+
+        <!-- Số điện thoại -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="SDT"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextSoDienThoai"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textSize="20sp"
+                android:hint="Nhập số điện thoại" />
+        </LinearLayout>
+
+        <!-- Gmail -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Gmail"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextGmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:hint="Nhập Gmail" />
+        </LinearLayout>
+
+        <!-- Các nút chức năng -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnThem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm"
+                android:backgroundTint="#03A9F4"/>
+
+            <Button
+                android:id="@+id/btnSua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Sửa"
+                android:backgroundTint="#03A9F4"/>
+
+            <Button
+                android:id="@+id/btnXoa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Xóa"
+                android:backgroundTint="#03A9F4"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
